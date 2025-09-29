@@ -49,6 +49,7 @@ function addTask(taskMsg) {
             break;
         }
     }
+    addCurrentToLocal();
 }
 
 /* 
@@ -97,6 +98,7 @@ function reOrganize(taskNum) {
             section[(i+1) % (section.length/2)].style.display = "none";
         }
     }
+    addCurrentToLocal();
 }
 
 /*
@@ -106,11 +108,13 @@ function reOrganize(taskNum) {
 function moveToComplete(finishedTask, num) {
     let currTask = completedTaskList[num].innerHTML;
     if (num == completedTaskList.length) {
+        addCompletedToLocal();
         return;
     }
     else if (currTask === "") {
         completedTaskList[num].innerHTML = finishedTask;
         section[num + (section.length/2)].style.display = "flex";
+        addCompletedToLocal();
         return;
     }
     else {
@@ -174,6 +178,7 @@ function clearTasks(list) {
             }
             taskList[i].innerHTML = "";
             section[i].style.display = "none";
+            localStorage.removeItem("current" + i);
         }
     }
     else {
@@ -183,6 +188,60 @@ function clearTasks(list) {
             }
             completedTaskList[i].innerHTML = "";
             section[i + (section.length/2)].style.display = "none";
+            localStorage.removeItem("completed" + i);
+        }
+    }
+}
+
+/*
+    Functions to save tasks to locally even when user refreshes/closes tab
+    Removes unneccessary local items as task list is reorganized
+*/
+function addCurrentToLocal() {
+    for (let i = 0; i < taskList.length; i++) {
+        if (taskList[i].innerHTML != "") {
+            localStorage.setItem("current" + i, taskList[i].innerHTML);
+        }
+        else if (localStorage.getItem("current" + i) != null) {
+            localStorage.removeItem("current" + i);
+        }
+    }
+}
+
+function addCompletedToLocal() {
+    for (let i = 0; i < completedTaskList.length; i++) {
+        if (completedTaskList[i].innerHTML != "") {
+            localStorage.setItem("completed" + i, completedTaskList[i].innerHTML);
+        }
+        else if (localStorage.getItem("completed" + i) != null) {
+            localStorage.removeItem("completed" + i);
+        }
+    }
+}
+
+/*
+    Function to display saved tasks on the page
+*/
+function loadLocalTasks() {
+    for (let i = 0; i < taskList.length; i++) {
+        let tempTask = localStorage.getItem("current" + i);
+        if (tempTask != null) {
+            taskList[i].innerHTML = tempTask;
+            section[i].style.display = "flex";
+        }
+        else {
+            break;
+        }
+    }
+
+    for (let i = 0; i < completedTaskList.length; i++) {
+        let tempTask = localStorage.getItem("completed" + i);
+        if (tempTask != null) {
+            completedTaskList[i].innerHTML = tempTask;
+            section[i + (section.length/2)].style.display = "flex";
+        }
+        else {
+            break;
         }
     }
 }
@@ -238,3 +297,8 @@ if (clearCompletedButton) {
         clearTasks("completed");
     })
 }
+
+/* 
+    Runs function when window loads
+*/
+window.onLoad = loadLocalTasks();

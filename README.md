@@ -1,6 +1,6 @@
 # To-Do List Webpage
 ## About
-This webpage is for you to type any tasks you want to do and save them temporarily. Reloading the webpage will erase your tasks. The task functions are somewhat limited because the webpage is more focused on creating an aesthetically pleasing interface. The colors, pictures, and audio are themed after Love and Deepspace. (As of now, there are no voice files, so only the music button workds.)
+This webpage is for you to type any tasks you want to do and will also save all your tasks even when you close the browser. The functionality of this webpage is somewhat limited because it is more focused on having an aesthetically pleasing interface. The colors, pictures, and audio are themed after Love and Deepspace. (As of now, there are no voice files, so only the music button workds.)
 
 ## Important Information
 ### URL to webpage (for those who don't want to download packages)
@@ -21,7 +21,7 @@ This webpage is for you to type any tasks you want to do and save them temporari
 - More command prompts if necessary
     - npm install ejs
 
-### How to run webpage
+### How to run webpage (if you're using Node.js)
 - Navigate the project directory
 - Type "node server.js" if you are only interacting
 - Type "npm run dev" if you want to continuously edit this webpage (for Windows, use npm.cmd instead of npm)
