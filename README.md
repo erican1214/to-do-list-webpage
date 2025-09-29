@@ -9,9 +9,9 @@ This webpage is for you to type any tasks you want to do and save them temporari
 - Google Chrome (or any browser)
 
 ### Packages Needed (Should already be in repository)
-- Express.js (this is the node_modules folder, package.json, and package-lock.json)
+- Express.js (The libraries and dependencies can be found in package-lock.json)
 
-- If any of the packages are said to be missing, navigate to the project directory, and run the following command prompts (for Windows, use npm.cmd instead of npm)
+- To install Express.js, navigate to the project directory, and run the following command prompts (for Windows, use npm.cmd instead of npm)
     - npm init -y
     - npm install express
 
