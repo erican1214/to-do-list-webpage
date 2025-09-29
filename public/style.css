@@ -284,22 +284,9 @@ However, a lot of features are hidden */
         border-width: 15px;
     }
 
-    h1 {
-        font-size: 25px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    p {
-        font-size: 15px;
-        /* margin: 3px; */
-    }
-
     .headerContainer {
         margin: 5px 0px;
-        height: 10%;
+        height: auto;
     }
 
     .topContainer {
@@ -318,21 +305,13 @@ However, a lot of features are hidden */
         padding: 0px;
     }
 
-    .columnSection1 p {
-        font-size: 12px;
-    }
-
     .columnSection2 {
         display: none;
     }
 
-    .section p {
-        font-size: 15px;
-    }
-
     .bottomContainer {
         margin: 5px 0px;
-        height: 25%;
+        height: auto;
     }
     
     .clearTaskSection1,
@@ -343,14 +322,6 @@ However, a lot of features are hidden */
     .inputSection {
         width: 100%;
         height: auto;
-    }
-
-    #taskMsg {
-        font-size: 15px;
-    }
-
-    #addTaskButton {
-        font-size: 15px;
     }
 
     .removeButton img,
