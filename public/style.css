@@ -1,0 +1,343 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Lucidia Console", "Courier New", monospace;
+}
+
+body {
+    background-color: rgb(235, 196, 235);
+    color: cornsilk;
+    border: 20px solid cornsilk;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    padding: 20px 30px;
+    text-align: center;
+    align-content: center;
+    text-shadow: 1px 1px 3px peachpuff;
+}
+
+h1 {
+    margin: 10px auto 30px auto;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+h2 {
+    font-weight: bold;
+    vertical-align: text-top;
+}
+
+p {
+    font-size: 20px;
+    margin: 5px;
+}
+
+.audioContainer {
+    text-align: left;
+}
+
+#backgroundMusic {
+    display: none;
+}
+
+.topContainer {
+    position: relative;
+    margin: 10px auto;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+#imageSection {
+    display: flex;
+    width: 33%;
+}
+
+#imageSection img {
+    position: relative;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.columnSection1,
+.columnSection2 {
+    position: relative;
+    padding: 0px 35px;
+    width: 33%;
+    overflow: auto;
+}
+
+.columnSection1 p,
+.columnSection2 p {
+    font-size: 15px;
+}
+
+.section {
+    position: relative;
+    gap: 5px;
+    margin: 10px auto;
+    width: 100%;
+    word-break: break-word;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: none;
+}
+
+.section p{
+    position: relative;
+    padding: 5px;
+    text-align: left;
+    align-content: center;
+    font-size: 20px;
+    color: violet;
+}
+
+.removeButton,
+#musicButton,
+#voiceButton {
+    padding: 1px;
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.removeButton img,
+#musicButton img, 
+#voiceButton img {
+    width: 35px;
+    height: 35px;
+}
+
+.removeButton:hover,
+#musicButton:hover,
+#voiceButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.removeButton[data-title] {
+    position: relative;
+    z-index: 999;
+}
+
+#musicButton[data-title] {
+    position: relative;
+    z-index: 998;
+}
+
+#audioButton[data-title] {
+    position: relative;
+    z-index: 997;
+}
+
+[data-title]:hover:after {
+    transition: all 0.3s ease;
+    visibility: visible;
+}
+
+[data-title]::after {
+    position: absolute;
+    content: attr(data-title);
+    color: violet;
+    background-color: cornsilk;
+    border-radius: 10px;
+    border: 5px solid cornsilk;
+    box-shadow: 1px 1px 3px peachpuff;
+    font-size: 15px;
+    padding: 5px;
+    word-break: keep-all;
+    visibility: hidden;
+}
+
+.checkmark {
+    width: 30px;
+    height: 33px;
+    margin-left: 5px;
+}
+
+.bottomContainer {
+    position: relative;
+    margin: 30px auto 10px;
+    height: auto;
+    width: 100%;
+}
+
+.innerSection {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.inputSection {
+    display: flex;
+    gap: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    width: 60%;
+}
+
+.clearTaskSection1 {
+    width: 20%;
+    text-align: left;
+}
+
+.clearTaskSection2 {
+    width: 20%;
+    text-align: right;
+}
+
+#clearCurrentTasks,
+#clearCompletedTasks {
+    width: 90%;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: cornsilk;
+    box-shadow: 1px 1px 3px peachpuff;
+    color: violet;
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#taskMsg {
+    height: 60px;
+    width: auto;
+    font-size: 20px;
+    color: violet;
+    background-color: aliceblue;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 1px 1px 3px peachpuff;
+    padding: 10px;
+    resize: none;
+    outline: none;
+}
+
+#taskMsg::placeholder {
+    color: violet;
+}
+
+#addTaskButton {
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: cornsilk;
+    box-shadow: 1px 1px 3px peachpuff;
+    color: violet;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#clearCurrentTasks:hover,
+#clearCompletedTasks:hover,
+#addTaskButton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2.5px peachpuff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: cornsilk;
+    box-shadow: inset 0 0 0 5px cornsilk;
+}
+
+/* Changes layout for mobile devices.
+However, a lot of features are hidden */
+@media (max-width: 600px) {
+    body {
+        padding: 0px 10px;
+        border-width: 15px;
+    }
+
+    h1 {
+        margin: 5px 0px 15px;
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+        margin: 3px;
+    }
+
+    .topContainer {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    .columnSection1,
+    #imageSection {
+        margin: 3px 0px;
+        height: 50%;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .columnSection1 p {
+        font-size: 12px;
+    }
+
+    .columnSection2 {
+        display: none;
+    }
+
+    .section p {
+        font-size: 15px;
+    }
+
+    .bottomContainer {
+        margin: 10px 0px 5px;
+    }
+    
+    .clearTaskSection1,
+    .clearTaskSection2 {
+        display: none;
+    }
+
+    .innerSection {
+        padding: 0px 5px;
+    }
+
+    .inputSection {
+        width: 100%;
+    }
+
+    #taskMsg {
+        font-size: 15px;
+    }
+
+    #addTaskButton {
+        width: 30%;
+        font-size: 15px;
+    }
+
+    .removeButton img,
+    #musicButton img, 
+    #voiceButton img {
+        width: 25px;
+        height: 25px;
+    }
+}

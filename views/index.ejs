@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>To-Do List</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To-Do List Page</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="audioContainer">
+            <button id="musicButton" data-title="Play music?"><img id="musicIcon" src="assets/images/muted_music_icon.png"></button>
+            <button id="voiceButton" data-title="Play voice?"><img id="audioIcon" src="assets/images/muted_audio_icon.png"></button>
+            <audio id="backgroundMusic" controls muted loop>
+                <source src="assets/audios/lads_sunny_summer.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+        <h1>Make your own To-Do List!</h1>
+        <div class="topContainer">
+            <div class="columnSection1">
+                <h2>Tasks to Complete</h2>
+                <p>(Click the star when you finish the task)</p>
+                <div class="section">
+                    <button class="removeButton" data-title="Remove task?"><img src="assets/images/star_button.png" width="40"></button>
+                    <p class="task"></p>
+                </div>
+                <div class="section">
+                    <button class="removeButton" data-title="Remove task?"><img src="assets/images/star_button.png"></button>
+                    <p class="task"></p>
+                </div>
+                <div class="section">
+                    <button class="removeButton" data-title="Remove task?"><img src="assets/images/star_button.png"></button>
+                    <p class="task"></p>
+                </div>
+                <div class="section">
+                    <button class="removeButton" data-title="Remove task?"><img src="assets/images/star_button.png"></button>
+                    <p class="task"></p>
+                </div>
+                <div class="section">
+                    <button class="removeButton" data-title="Remove task?"><img src="assets/images/star_button.png"></button>
+                    <p class="task"></p>
+                </div>
+                <div class="section">
+                    <button class="removeButton" data-title="Remove task?"><img src="assets/images/star_button.png" width="40"></button>
+                    <p class="task"></p>
+                </div>
+                <div class="section">
+                    <button class="removeButton" data-title="Remove task?"><img src="assets/images/star_button.png"></button>
+                    <p class="task"></p>
+                </div>
+                <div class="section">
+                    <button class="removeButton" data-title="Remove task?"><img src="assets/images/star_button.png"></button>
+                    <p class="task"></p>
+                </div>
+                <div class="section">
+                    <button class="removeButton" data-title="Remove task?"><img src="assets/images/star_button.png"></button>
+                    <p class="task"></p>
+                </div>
+                <div class="section">
+                    <button class="removeButton" data-title="Remove task?"><img src="assets/images/star_button.png"></button>
+                    <p class="task"></p>
+                </div>
+            </div>
+            <div id="imageSection">
+                <img id="image" src="assets/images/xavier_default.webp">
+            </div>
+            <div class=columnSection2>
+                <h2>Recently Completed Tasks</h2>
+                <p>(Only shows 10 most recent)</p>
+                <div class="section">
+                    <img class="checkmark" src="assets/images/checkmark.png">
+                    <p class=completedTask></p>
+                </div>
+                <div class="section">
+                    <img class="checkmark" src="assets/images/checkmark.png">
+                    <p class=completedTask></p>
+                </div>
+                <div class="section">
+                    <img class="checkmark" src="assets/images/checkmark.png">
+                    <p class=completedTask></p>
+                </div>
+                <div class="section">
+                    <img class="checkmark" src="assets/images/checkmark.png">
+                    <p class=completedTask></p>
+                </div>
+                <div class="section">
+                    <img class="checkmark" src="assets/images/checkmark.png">
+                    <p class=completedTask></p>
+                </div>
+                <div class="section">
+                    <img class="checkmark" src="assets/images/checkmark.png">
+                    <p class=completedTask></p>
+                </div>
+                <div class="section">
+                    <img class="checkmark" src="assets/images/checkmark.png">
+                    <p class=completedTask></p>
+                </div>
+                <div class="section">
+                    <img class="checkmark" src="assets/images/checkmark.png">
+                    <p class=completedTask></p>
+                </div>
+                <div class="section">
+                    <img class="checkmark" src="assets/images/checkmark.png">
+                    <p class=completedTask></p>
+                </div>
+                <div class="section">
+                    <img class="checkmark" src="assets/images/checkmark.png">
+                    <p class=completedTask></p>
+                </div>
+            </div>
+        </div>
+        <div class = "bottomContainer">
+            <h2 id="instructions">Type your tasks in the textbox below!</h2>
+            <p id="error"></p>
+            <div class="innerSection">
+                <div class="clearTaskSection1">
+                    <button id="clearCurrentTasks">Clear current tasks</button>
+                </div>
+                <div class="inputSection">
+                    <textarea id="taskMsg" placeholder="Type your task here!"></textarea>
+                    <button id="addTaskButton"><strong>Add Task!</strong></button>
+                </div>
+                <div class="clearTaskSection2">
+                    <button id="clearCompletedTasks">Clear completed tasks</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
