@@ -193,21 +193,18 @@ p {
     padding-bottom: 10px;
     justify-content: center;
     width: 60%;
+    gap: 5px;
 }
 
-.clearTaskSection1 {
-    width: 18%;
-    text-align: left;
-}
-
+.clearTaskSection1,
 .clearTaskSection2 {
     width: 18%;
-    text-align: right;
+    text-align: center;
 }
 
 #clearCurrentButton,
 #clearCompletedButton {
-    width: 90%;
+    width: 80%;
     margin: 5px;
     border-radius: 10px;
     border: none;
@@ -239,7 +236,7 @@ p {
 }
 
 #addTaskButton {
-    width: 30%;
+    width: auto;
     margin: 5px;
     border-radius: 10px;
     border: none;
@@ -322,6 +319,10 @@ However, a lot of features are hidden */
     .inputSection {
         width: 100%;
         height: auto;
+    }
+
+    #addTaskButton {
+        margin: 0px;
     }
 
     .removeButton img,
