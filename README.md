@@ -3,6 +3,9 @@
 This webpage is for you to type any tasks you want to do and save them temporarily. Reloading the webpage will erase your tasks. The task functions are somewhat limited because the webpage is more focused on creating an aesthetically pleasing interface. The colors, pictures, and audio are themed after Love and Deepspace. (As of now, there are no voice files, so only the music button workds.)
 
 ## Important Information
+### URL to webpage (for those who don't want to download packages)
+- https://to-do-list-erican1214.netlify.app/
+
 ### Applications Needed
 - Node.js
 - VSCode (or any IDE)
@@ -25,7 +28,7 @@ This webpage is for you to type any tasks you want to do and save them temporari
 - Go on your browser and type "localhost:3000" in the search bar
 
 ### Compatability/Accessibility
-- I have only tested this webpage on a Google Chrome Browser. Let me know if it is not compatible with other browsers.
+- I have only tested this webpage on a Google Chrome Browser. It is possible that it won't be compatible with other browsers
 - Although this is responsive on mobile devices, a couple of features are hidden when used on mobile devices in portrait mode. The width of webpage must be at least 600px to access all features
 
 ### Image Attributions
