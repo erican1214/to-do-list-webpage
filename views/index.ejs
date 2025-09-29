@@ -9,7 +9,8 @@
         <script src="script.js" defer></script>
     </head>
     <body>
-        <div class="audioContainer">
+        <div class="headerContainer">
+        <div class="audioSection">
             <button id="musicButton" data-title="Play music?"><img id="musicIcon" src="assets/images/muted_music_icon.png"></button>
             <button id="voiceButton" data-title="Play voice?"><img id="audioIcon" src="assets/images/muted_audio_icon.png"></button>
             <audio id="backgroundMusic" controls muted loop>
@@ -17,6 +18,7 @@
             </audio>
         </div>
         <h1>Make your own To-Do List!</h1>
+        </div>
         <div class="topContainer">
             <div class="columnSection1">
                 <h2>Tasks to Complete</h2>
@@ -115,14 +117,14 @@
             <p id="error"></p>
             <div class="innerSection">
                 <div class="clearTaskSection1">
-                    <button id="clearCurrentTasks">Clear current tasks</button>
+                    <button id="clearCurrentButton">Clear current tasks</button>
                 </div>
                 <div class="inputSection">
                     <textarea id="taskMsg" placeholder="Type your task here!"></textarea>
                     <button id="addTaskButton"><strong>Add Task!</strong></button>
                 </div>
                 <div class="clearTaskSection2">
-                    <button id="clearCompletedTasks">Clear completed tasks</button>
+                    <button id="clearCompletedButton">Clear completed tasks</button>
                 </div>
             </div>
         </div>

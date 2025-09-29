@@ -31,8 +31,8 @@ const audioImages = {
     "unmuted": "assets/images/audio_icon.png"
 };
 
-const clearCurrentTasks = document.getElementById("clearCurrentTasks");
-const clearCompletedTasks = document.getElementById("clearCompletedTasks");
+const clearCurrentButton = document.getElementById("clearCurrentButton");
+const clearCompletedButton = document.getElementById("clearCompletedButton");
 
 /*
     Adds task to list.
@@ -227,14 +227,14 @@ if (musicButton) {
     });
 }
 
-if (clearCurrentTasks) {
-    clearCurrentTasks.addEventListener("click", event => {
+if (clearCurrentButton) {
+    clearCurrentButton.addEventListener("click", event => {
         clearTasks("current");
     })
 }
 
-if (clearCompletedTasks) {
-    clearCompletedTasks.addEventListener("click", event => {
+if (clearCompletedButton) {
+    clearCompletedButton.addEventListener("click", event => {
         clearTasks("completed");
     })
 }

@@ -8,7 +8,7 @@ This webpage is for you to type any tasks you want to do and save them temporari
 - VSCode (or any IDE)
 - Google Chrome (or any browser)
 
-### Packages Needed (Should already be in repository)
+### Packages Needed
 - Express.js (The libraries and dependencies can be found in package-lock.json)
 
 - To install Express.js, navigate to the project directory, and run the following command prompts (for Windows, use npm.cmd instead of npm)
