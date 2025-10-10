@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: url("assets/images/star_cursor.png"), auto;
 }
 
 h1 {
@@ -79,6 +80,7 @@ p {
     padding: 0px 35px;
     width: 33%;
     overflow: auto;
+    scrollbar-width: none;
 }
 
 .columnSection1 p,
