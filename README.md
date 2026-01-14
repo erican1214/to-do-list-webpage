@@ -2,10 +2,23 @@
 ## About
 This webpage is for you to type any tasks you want to do and will also save all your tasks even when you close the browser. The functionality of this webpage is somewhat limited because it is more focused on having an aesthetically pleasing interface. The colors, pictures, and audio are themed after Love and Deepspace. (As of now, there are no voice files, so only the music button workds.)
 
-## Important Information
-### URL to webpage (for those who don't want to download packages)
+## URL to webpage
 - https://to-do-list-erican1214.netlify.app/
 
+## Compatability/Accessibility
+- I have only tested this webpage on a Google Chrome Browser. It is possible that it won't be compatible with other browsers
+- Although this is responsive on mobile devices, a couple of features are hidden when used on mobile devices in portrait mode. The width of webpage must be at least 600px to access all features
+
+## Credits
+### Image Attributions
+- [audio_icon.png](https://www.freepik.com/free-vector/bright-megaphone-design_138418344.htm)
+- [checkmark.png](https://www.flaticon.com/free-icons/checkbox)
+- [music_icon.png](https://www.freepik.com/free-vector/bright-music-note_145290248.htm)
+- [star_button.png](https://www.freepik.com/free-vector/star-user-interfase-button_137585895.htm)
+
+- All other images, voicelines, and music are from Love and Deepspace by Infold Paper Games.
+
+## Important Info for Downloading Packages
 ### Applications Needed
 - Node.js
 - VSCode (or any IDE)
@@ -26,18 +39,6 @@ This webpage is for you to type any tasks you want to do and will also save all 
 - Type "node server.js" if you are only interacting
 - Type "npm run dev" if you want to continuously edit this webpage (for Windows, use npm.cmd instead of npm)
 - Go on your browser and type "localhost:3000" in the search bar
-
-### Compatability/Accessibility
-- I have only tested this webpage on a Google Chrome Browser. It is possible that it won't be compatible with other browsers
-- Although this is responsive on mobile devices, a couple of features are hidden when used on mobile devices in portrait mode. The width of webpage must be at least 600px to access all features
-
-### Image Attributions
-- [audio_icon.png](https://www.freepik.com/free-vector/bright-megaphone-design_138418344.htm)
-- [checkmark.png](https://www.flaticon.com/free-icons/checkbox)
-- [music_icon.png](https://www.freepik.com/free-vector/bright-music-note_145290248.htm)
-- [star_button.png](https://www.freepik.com/free-vector/star-user-interfase-button_137585895.htm)
-
-- All other images, voicelines, and music are from Love and Deepspace by Paper Games.
 
 ## File Overview
 &larr; README.md
