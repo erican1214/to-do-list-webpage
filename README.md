@@ -5,6 +5,10 @@ This webpage is for you to type any tasks you want to do and will also save all 
 ## URL to webpage
 - https://to-do-list-erican1214.netlify.app/
 
+## Download Instructions
+- You must download all files in the repository for the game to function
+- After downloading all files, open index.html on your preferred browser (playing locally)
+
 ## Compatability/Accessibility
 - I have only tested this webpage on a Google Chrome Browser. It is possible that it won't be compatible with other browsers
 - Although this is responsive on mobile devices, a couple of features are hidden when used on mobile devices in portrait mode. The width of webpage must be at least 600px to access all features
@@ -17,28 +21,6 @@ This webpage is for you to type any tasks you want to do and will also save all 
 - [star_button.png](https://www.freepik.com/free-vector/star-user-interfase-button_137585895.htm)
 
 - All other images, voicelines, and music are from Love and Deepspace by Infold Paper Games.
-
-## Important Info for Downloading Packages
-### Applications Needed
-- Node.js
-- VSCode (or any IDE)
-- Google Chrome (or any browser)
-
-### Packages Needed
-- Express.js (The libraries and dependencies can be found in package-lock.json)
-
-- To install Express.js, navigate to the project directory, and run the following command prompts (for Windows, use npm.cmd instead of npm)
-    - npm init -y
-    - npm install express
-
-- More command prompts if necessary
-    - npm install ejs
-
-### How to run webpage (if you're using Node.js)
-- Navigate the project directory
-- Type "node server.js" if you are only interacting
-- Type "npm run dev" if you want to continuously edit this webpage (for Windows, use npm.cmd instead of npm)
-- Go on your browser and type "localhost:3000" in the search bar
 
 ## File Overview
 &larr; README.md
